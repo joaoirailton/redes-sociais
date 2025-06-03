@@ -8,7 +8,9 @@ body{
     width: 100vw;
     height: 100vh;
     background-image: url(../imagens/fundo-madeira.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 main{
     width: 100vw;
@@ -53,9 +55,15 @@ ul#lista{
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.417);
     cursor: pointer;
 }
-a{
-    
-}
 ul#lista img{
     width: 50px;
+    border-radius: 50%;
+}
+ul#lista img:hover{
+    border: 2px solid white;
+    transition: ease-in-out 0.3s;
+}
+ul#lista img:hover li{
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.417);
+    transform: ;
 }
